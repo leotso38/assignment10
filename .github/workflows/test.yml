@@ -100,7 +100,7 @@ jobs:
           push: true
           tags: |
             leotso88/module10:latest
-            leotso88/module10:${{ github.sha }} # <-- Dedicated test DB name
+            leotso88/module10:${{ github.sha }} 
           platforms: linux/amd64,linux/arm64
           cache-from: type=registry,ref=leotso88/module10:cache
           cache-to: type=inline,mode=max
